@@ -8,7 +8,4 @@ class BoardsController < ApplicationController
 
   end
 
-  def new
-    
-  end
 end
