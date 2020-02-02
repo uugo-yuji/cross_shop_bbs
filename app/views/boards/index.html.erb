@@ -1,3 +1,65 @@
-<h1>Home page</h1>
-<h2>掲示板一覧</h2>
-<button class="btn btn-primary">Normal</button>
+<h1>Home画面</h1>
+<div class="card container" style="width: 600px; margin-bottom: 10px;">
+  <div class="card-body">
+    <ul id="nav">
+      <li><%= link_to 'ホーム', root_path %></li>
+      <li><%= link_to '応援現場', cheering_path %></li>
+    </ul>
+  </div>
+</div>
+
+<%
+=begin%>
+ モーダル投稿フォーム // 開始
+<%
+=end%>
+<%
+=begin%>
+<div class="container" style="width: 600px; margin-bottom: 10px; padding-left: 0px;">
+  <button type="button" data-toggle="modal" data-target="#myModal" class="btn-outline-secondary btn-lg" style="
+    width: 602px;
+">投稿フォーム
+  <br>
+  こちらから投稿内容を記入してください</button>
+</div> 
+<%
+=end%>
+<div class="container" style="width: 600px; margin-bottom: 10px; padding-left: 0px;">
+  <%= link_to '投稿する', new_path, class: 'btn-outline-secondary btn-lg', type: 'button', style: 'width: 600px;' %>
+</div>
+
+<div class="card container" style="width: 600px; margin-bottom: 10px;">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <a href="#" class="card-subtitle mb-2 text-muted">ユーザ名</a>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div class="text-right">
+      <a href="#" class="card-link">コメント</a>
+      <a href="#" class="card-link">Another link</a>
+    </div>
+  </div>
+</div>
+
+<div class="card container" style="width: 600px; margin-bottom: 10px;">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <a href="#" class="card-subtitle mb-2 text-muted">ユーザ名</a>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div class="text-right">
+      <a href="#" class="card-link">コメント</a>
+      <a href="#" class="card-link">Another link</a>
+    </div>
+  </div>
+</div>
+
+<div class="card container" style="width: 600px; margin-bottom: 10px;">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <a href="#" class="card-subtitle mb-2 text-muted">ユーザ名</a>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div class="text-right">
+      <a href="#" class="card-link">コメント</a>
+      <a href="#" class="card-link">Another link</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,120 @@
+<h1>応援現場画面</h1>
+<div class="card container" style="width: 600px; margin-bottom: 10px;">
+  <div class="card-body">
+    <ul id="nav">
+      <li><%= link_to 'ホーム', root_path %></li>
+      <li><%= link_to '応援現場', cheering_path %></li>
+    </ul>
+  </div>
+</div>
+
+<%
+=begin%>
+ モーダル投稿フォーム // 開始
+<%
+=end%>
+<div class="container" style="width: 600px; margin-bottom: 10px; padding-left: 0px;">
+  <button type="button" data-toggle="modal" data-target="#myModal" class="btn-outline-secondary btn-lg" style="
+    width: 602px;
+">投稿フォーム
+  <br>
+  こちらから投稿内容を記入してください</button>
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel">カスタムJavaScriptでfocus設定</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="閉じる"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>カスタムJavaScriptを使用してEメールアドレスの入力欄にfocusさせる。</p>
+        <form class="px-4 py-3">
+          <div class="form-group">
+        <label for="exampleFormControlInput1">名前</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="名前">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">タイトル</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="タイトル">
+      </div>
+      <div class="form-group">
+        <label for="textarea1">投稿内容</label>
+        <textarea id="textarea1" class="form-control" style="height: 90px;" placeholder="投稿内容"></textarea>
+      </div>
+      <div class="text-right">
+        <button type="submit" class="btn btn-primary mb-2">投稿</button>
+      </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<%
+=begin%>
+ モーダル投稿フォーム // 終了
+<%
+=end%>
+
+<%
+=begin%>
+ <div class="card container" style="width: 600px; margin-bottom: 10px;">
+  <div class="card-body">
+    <form>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">名前</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="名前">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">タイトル</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="タイトル">
+      </div>
+      <div class="form-group">
+        <label for="textarea1">投稿内容</label>
+        <textarea id="textarea1" class="form-control" style="height: 90px;" placeholder="投稿内容"></textarea>
+      </div>
+      <div class="text-right">
+        <button type="submit" class="btn btn-primary mb-2">投稿</button>
+      </div>
+    </form>
+  </div>
+</div> 
+<%
+=end%>
+
+<div class="card container" style="width: 600px; margin-bottom: 10px;">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <a href="#" class="card-subtitle mb-2 text-muted">ユーザ名</a>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div class="text-right">
+      <a href="#" class="card-link">コメント</a>
+      <a href="#" class="card-link">Another link</a>
+    </div>
+  </div>
+</div>
+
+<div class="card container" style="width: 600px; margin-bottom: 10px;">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <a href="#" class="card-subtitle mb-2 text-muted">ユーザ名</a>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div class="text-right">
+      <a href="#" class="card-link">コメント</a>
+      <a href="#" class="card-link">Another link</a>
+    </div>
+  </div>
+</div>
+
+<div class="card container" style="width: 600px; margin-bottom: 10px;">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <a href="#" class="card-subtitle mb-2 text-muted">ユーザ名</a>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div class="text-right">
+      <a href="#" class="card-link">コメント</a>
+      <a href="#" class="card-link">Another link</a>
+    </div>
+  </div>
+</div>

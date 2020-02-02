@@ -10,9 +10,17 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery3
 //= require popper
 //= require bootstrap-sprockets
-//= require rails-ujs
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+
+
+
+// 投稿フォームモーダル
+$('#myModal').on('shown.bs.modal', function () {
+  $('#exampleFormEmail').trigger('focus')
+})
