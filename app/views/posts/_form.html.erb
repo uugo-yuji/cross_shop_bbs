@@ -1,0 +1,28 @@
+<%= render 'shared/error_messages' %>
+
+<%= form_with model: post do |f| %>
+
+<div class="container mx-auto" style="width: 500px;">
+  <form class="form-size">
+    <div class="form-group">
+      <%= f.label :title, 'タイトル' %>
+      <%= f.text_field :title, class: 'form-control', placeholder: 'タイトル' %>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">タグ</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="タグ">
+      <small id="emailHelp" class="form-text text-muted">選ぶ式にした方が良い？</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">地域</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="地域">
+      <small id="emailHelp" class="form-text text-muted">これも同様選ぶ式にした方が良い？</small>
+    </div>
+    <div class="form-group">
+    <%= f.label :text, '詳細内容' %>
+    <%= f.text_area :text, class: 'form-control', rows: 4 %>
+  </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+<% end %>
