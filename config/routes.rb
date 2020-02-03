@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   root 'boards#index'
   get 'cheering', to: 'boards#cheering'
   get 'new', to: 'boards#new'
+
+  resources :posts
 end
